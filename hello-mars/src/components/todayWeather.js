@@ -11,7 +11,7 @@ const TodayWeather = (props) => {
                 <li>Min Temp: {props.todayWeather.minTemp} °C</li>
                 <li>Max Temp: {props.todayWeather.maxTemp} °C</li>
                 <li>Opacity: {props.todayWeather.opacity}</li>
-                <li>Air Pressure: {props.todayWeather.airPressure}</li>
+                <li>Air Pressure: {props.todayWeather.airPressure} Pa</li>
             </ul>
         </div>
     )
