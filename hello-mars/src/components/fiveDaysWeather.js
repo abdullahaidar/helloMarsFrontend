@@ -5,7 +5,7 @@ const FiveDaysWeather = (props) => {
 
     console.log(props)
     return (
-        <>
+        <div>
             <h3>this is five day weather</h3>
 
             {props.fiveDaysWeather ? props.fiveDaysWeather.map((element, index) =>
@@ -21,7 +21,7 @@ const FiveDaysWeather = (props) => {
                 </ul>
             ) : <p>there is no data</p>
             }
-        </>
+        </div>
     )
 }
 
