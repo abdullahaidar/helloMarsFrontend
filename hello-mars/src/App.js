@@ -1,22 +1,39 @@
-import './App.css';
 
-function App() {
+import React, { useState, useEffect } from 'react';
+// import './App.css'
+
+
+// IMPORTS
+
+import TodayWeather from './components/todayWeather';
+import FiveDaysWeather from './components/fiveDaysWeather'
+
+const axios = require('axios').default;
+
+
+
+const App = () => {
+
+  const [todayWeather, setTodayWeather] = useState({});
+  const [fiveDaysWeather, setFiveDaysWeather] = useState([])
+
+  React.useEffect(() => {
+
+    axios.get('http://localhost:3000/today').then((resp) => {
+      setTodayWeather(resp.data)
+    })
+    axios.get('http://localhost:3000/five-days').then((resp) => {
+      setFiveDaysWeather(resp.data)
+    })
+  }, []);
+
+  //console.log(fiveDaysWeather)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img  className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appContainer">
+      <TodayWeather todayWeather={todayWeather} />
+      <FiveDaysWeather fiveDaysWeather={fiveDaysWeather} />
     </div>
   );
 }

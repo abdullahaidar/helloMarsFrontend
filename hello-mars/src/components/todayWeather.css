@@ -1,0 +1,26 @@
+.todayContainer{
+    /* position: absolute; */
+    width: 438.55px;
+    height: 438.55px;
+    left: 904.45px;
+    top: 70.45px;
+    
+    /* background: url(mars-25461_1280.png); */
+    mix-blend-mode: normal;
+    box-shadow: 0px 19px 37px 8px #580606, 0px 0px 41px 6px rgba(245, 190, 47, 0.7);
+    filter: drop-shadow(0px 4px 4px #EDEDED);
+
+}
+
+.containsTodayWeatherAndLog{
+    display: flex;
+    justify-content:space-around;
+} 
+
+.todayWeatherListItem{
+    list-style: none;
+}
+
+.logoContainer{
+
+}
