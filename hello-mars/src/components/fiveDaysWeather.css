@@ -1,0 +1,43 @@
+.fiveDaysHeadline{
+/* position: absolute; */
+width: 274px;
+height: 44px;
+left: 576px;
+top: 635px;
+
+font-family: Gugi;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 44px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* color: #FFFFFF; */
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fiveDaysContainer{
+display: flex;
+/* position: absolute; */
+/* width: 181px; */
+/* height: 249px;
+top: 710px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+
+color: #F5BE2F; */
+
+
+}
+
+.listContainer{
+    list-style: none;
+
+}

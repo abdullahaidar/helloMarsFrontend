@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+// import './App.css'
 
 
 // IMPORTS
@@ -16,12 +17,12 @@ const App = () => {
   const [todayWeather, setTodayWeather] = useState({});
   const [fiveDaysWeather, setFiveDaysWeather] = useState([])
 
-  React.useEffect(async () => {
+  React.useEffect(() => {
 
-    await axios.get('http://localhost:3000/today').then((resp) => {
+    axios.get('http://localhost:3000/today').then((resp) => {
       setTodayWeather(resp.data)
     })
-    await axios.get('http://localhost:3000/five-days').then((resp) => {
+    axios.get('http://localhost:3000/five-days').then((resp) => {
       setFiveDaysWeather(resp.data)
     })
   }, []);
@@ -30,8 +31,7 @@ const App = () => {
 
 
   return (
-    <div>
-      <h1>hello mars</h1>
+    <div className="appContainer">
       <TodayWeather todayWeather={todayWeather} />
       <FiveDaysWeather fiveDaysWeather={fiveDaysWeather} />
     </div>
