@@ -1,34 +1,27 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import './App.css'
-
 
 // IMPORTS
 
-import TodayWeather from './components/todayWeather';
-import FiveDaysWeather from './components/fiveDaysWeather'
+import TodayWeather from "./components/todayWeather";
+import FiveDaysWeather from "./components/fiveDaysWeather";
 
-const axios = require('axios').default;
-
-
+const axios = require("axios").default;
 
 const App = () => {
-
   const [todayWeather, setTodayWeather] = useState({});
-  const [fiveDaysWeather, setFiveDaysWeather] = useState([])
+  const [fiveDaysWeather, setFiveDaysWeather] = useState([]);
 
   React.useEffect(() => {
-
-    axios.get('http://localhost:3000/today').then((resp) => {
-      setTodayWeather(resp.data)
-    })
-    axios.get('http://localhost:3000/five-days').then((resp) => {
-      setFiveDaysWeather(resp.data)
-    })
+    axios.get("http://localhost:3001/today").then((resp) => {
+      setTodayWeather(resp.data);
+    });
+    axios.get("http://localhost:3001/five-days").then((resp) => {
+      setFiveDaysWeather(resp.data);
+    });
   }, []);
 
   //console.log(fiveDaysWeather)
-
 
   return (
     <div className="appContainer">
@@ -36,6 +29,6 @@ const App = () => {
       <FiveDaysWeather fiveDaysWeather={fiveDaysWeather} />
     </div>
   );
-}
+};
 
 export default App;
