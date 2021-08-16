@@ -16,8 +16,8 @@ const FiveDaysWeather = (props) => {
                 <li>Sol: {element.sol}</li>
                 <hr />
                 <img src="" alt="graphic representation of the weather" />
-                <li>Min Temp: {element.minTemp}</li>
-                <li>Max Temp: {element.maxTemp}</li>
+                <li>Min Temp: {element.minTemp}°C</li>
+                <li>Max Temp: {element.maxTemp}°C</li>
               </ul>
             ))
           ) : (

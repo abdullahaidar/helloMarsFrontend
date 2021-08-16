@@ -14,8 +14,11 @@ const TodayWeather = (props) => {
           <li>Min Temp: {props.todayWeather.minTemp} °C</li>
           <li>Max Temp: {props.todayWeather.maxTemp} °C</li>
           <li>Opacity: {props.todayWeather.opacity}</li>
-          <img src="" alt="graphic representation of the weather" />
-          <li>Air Pressure: {props.todayWeather.airPressure}</li>
+          <img
+            src="../src/images/sunny.png"
+            alt="graphic representation of the weather"
+          />
+          <li>Air Pressure: {props.todayWeather.airPressure} mP</li>
         </ul>
       </div>
       <div>
