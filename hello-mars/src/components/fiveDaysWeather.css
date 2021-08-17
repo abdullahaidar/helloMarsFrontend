@@ -1,5 +1,8 @@
 body {
-  background-color: orangered;
+  /* background-color: orangered; */
+  background-image: url(../images/Artist_s_impression_of_Mars.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
 .fiveDaysHeadline {
@@ -28,7 +31,6 @@ body {
 .listContainer {
   list-style: none;
   background-color: rgba(0, 0, 0, 0.5);
-
   align-items: center;
   text-align: center;
   border-radius: 5%;
@@ -46,7 +48,6 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 1.5em;
-  opacity: 100% !important;
 }
 
 .fiveDaysTemp {
