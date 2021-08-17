@@ -1,5 +1,6 @@
 import React from "react";
 import "./fiveDaysWeather.css";
+import sunny from "../images/sunny.png";
 
 const FiveDaysWeather = (props) => {
   console.log(props);
@@ -16,7 +17,13 @@ const FiveDaysWeather = (props) => {
                 <li className="fiveDaysDate">Date: {element.date}</li>
                 <br />
                 <hr />
-                <img src="" alt="sunny graphic" />
+                <img
+                  src={sunny}
+                  alt="sunny graphic"
+                  height="100em"
+                  width="auto"
+                />
+
                 <li className="fiveDaysTemp">Min Temp: {element.minTemp}°C</li>
                 <li className="fiveDaysTemp">Max Temp: {element.maxTemp}°C</li>
               </ul>
