@@ -6,7 +6,7 @@ const FiveDaysWeather = (props) => {
   return (
     <div>
       <div>
-        <h3 className="fiveDaysHeadline">The past five Days</h3>
+        <h3 className="fiveDaysHeadline">The Past 5 Days</h3>
         <div className="fiveDaysContainer">
           {props.fiveDaysWeather ? (
             props.fiveDaysWeather.map((element, index) => (
