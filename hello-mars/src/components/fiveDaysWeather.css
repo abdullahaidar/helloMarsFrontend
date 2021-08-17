@@ -1,6 +1,8 @@
-.fiveDaysHeadline {
-  /* position: absolute; */
+body {
   background-color: orangered;
+}
+
+.fiveDaysHeadline {
   color: white;
   width: 20rem;
   height: 3rem;
@@ -19,19 +21,36 @@
 
 .fiveDaysContainer {
   display: flex;
-  /* position: absolute; */
-  /* width: 181px; */
-  /* height: 249px;
-top: 710px;
-font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 24px;
-
-color: #F5BE2F; */
+  margin: 0 auto;
 }
 
 .listContainer {
   list-style: none;
+  background-color: black;
+  opacity: 50%;
+  align-items: center;
+  text-align: center;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.fiveDaysDate {
+  color: white;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.fiveDaysTemp {
+  color: #f5be2f;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
 }
