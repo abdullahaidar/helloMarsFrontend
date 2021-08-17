@@ -13,19 +13,19 @@ const FiveDaysWeather = (props) => {
             props.fiveDaysWeather.map((element, index) => (
               <ul className="listContainer">
                 {/* <li key={index}></li> */}
-                <li className="fiveDaysDate">Sol: {element.sol}</li>
-                <li className="fiveDaysDate">Date: {element.date}</li>
+                <li className="fiveDaysDate">Sol {element.sol}</li>
+                <li className="fiveDaysDate"> {element.date}</li>
                 <br />
                 <hr />
                 <img
                   src={sunny}
                   alt="sunny graphic"
-                  height="100em"
+                  height="75em"
                   width="auto"
                 />
 
-                <li className="fiveDaysTemp">Min Temp: {element.minTemp}°C</li>
-                <li className="fiveDaysTemp">Max Temp: {element.maxTemp}°C</li>
+                <li className="fiveDaysTemp">High: {element.minTemp}° C</li>
+                <li className="fiveDaysTemp">Low: {element.maxTemp}° C</li>
               </ul>
             ))
           ) : (
