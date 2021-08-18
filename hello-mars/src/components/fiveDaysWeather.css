@@ -8,11 +8,11 @@ body {
   color: white;
   width: 35vw;
   height: 6vh;
+  margin-top: 8vh;
+  margin-bottom: 1vh;
   font-family: Gugi;
-  font-style: normal;
   font-weight: normal;
-  font-size: 2.3rem;
-  line-height: 2rem;
+  font-size: 3vw;
   display: flex;
   align-items: center;
   text-align: center;
@@ -24,7 +24,6 @@ body {
 .fiveDaysContainer {
   display: flex;
   margin: 0 auto;
-  /* background-color: aqua; */
 }
 
 .listContainer {
@@ -46,7 +45,7 @@ body {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.8vw;
 }
 
 .fiveDaysTemp {
@@ -54,5 +53,5 @@ body {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.3vw;
 }
