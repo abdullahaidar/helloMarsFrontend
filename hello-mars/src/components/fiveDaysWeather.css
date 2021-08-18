@@ -36,10 +36,10 @@ body {
   border-radius: 5%;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-left: 1.5em;
+  padding-right: 1.5vw;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 1.5vw;
 }
 
 .fiveDaysDate {
