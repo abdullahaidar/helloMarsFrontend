@@ -1,6 +1,7 @@
 .containsTodayWeatherAndLog {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .todayWeatherContainer {
@@ -17,6 +18,8 @@
   box-shadow: 0px 19px 37px 8px #580606,
     0px 0px 41px 6px rgba(245, 190, 47, 0.7);
   filter: drop-shadow(0px 4px 4px #ededed);
+  flex-basis: 50vh;
+  flex-basis: 30vw;
 }
 
 .todayWeatherListItem {
@@ -44,4 +47,7 @@
 }
 
 .logoContainer {
+  background-color: aqua;
+  flex-basis: 50vh;
+  flex-basis: 50vw;
 }
