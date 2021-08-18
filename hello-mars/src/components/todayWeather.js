@@ -1,24 +1,24 @@
 import React from "react";
 import "./todayWeather.css";
+import sunny from "../images/sunny.png";
 
 const TodayWeather = (props) => {
   return (
     <div className="containsTodayWeatherAndLog">
       <div className="todayWeatherContainer">
-        <h3>Gale Crater, Mars</h3>
+        <h3 className="weatherLocation">Gale Crater, Mars</h3>
         <ul className="todayWeatherListItem">
-          <li>Season: {props.todayWeather.season}</li>
-          <li>Sol: {props.todayWeather.sol}</li>
-          <li>Date: {props.todayWeather.date}</li>
+          <li className="season">Season: {props.todayWeather.season}</li>
+          <li className="date">Sol: {props.todayWeather.sol}</li>
+          <li className="date">Date: {props.todayWeather.date}</li>
           <hr />
-          <li>Min Temp: {props.todayWeather.minTemp} °C</li>
-          <li>Max Temp: {props.todayWeather.maxTemp} °C</li>
-          <li>Opacity: {props.todayWeather.opacity}</li>
-          <img
-            src="../src/images/sunny.png"
-            alt="graphic representation of the weather"
-          />
-          <li>Air Pressure: {props.todayWeather.airPressure} mP</li>
+          <li className="temp">Min Temp: {props.todayWeather.minTemp} °C</li>
+          <li className="temp">Max Temp: {props.todayWeather.maxTemp} °C</li>
+          <li className="weatherData">Opacity: {props.todayWeather.opacity}</li>
+          <img src={sunny} alt="funny sunny" height="75em" width="auto" />
+          <li className="weatherData">
+            Air Pressure: {props.todayWeather.airPressure} mP
+          </li>
         </ul>
       </div>
       <div>
