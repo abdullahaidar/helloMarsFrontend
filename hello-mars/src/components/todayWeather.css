@@ -6,11 +6,11 @@
 
 .todayWeatherContainer {
   background-color: rgba(0, 0, 0, 0.3);
-  margin-left: 5vw;
-  margin-top: 2vh;
-  width: 30vw;
-  height: 45vh;
-  color: white;
+  /* margin-left: 2vw; */
+  /* margin-top: 2vh; */
+  /* width: 30vw;
+  height: 50vh; */
+  /* color: white; */
   border-radius: 5px;
   border: 4px;
   border-color: rgba(0, 0, 0, 0.3);
@@ -30,24 +30,46 @@
   text-align: center;
   text-shadow: 0px 4px 4px #000000;
   font-family: Gugi;
-  font-size: 2vw;
-  margin-top: 3vh;
+  font-size: 2.3em;
+  margin-top: 2vh;
+  color: white;
 }
 
 .season {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  /* font-weight: bold; */
+  font-size: 2em;
+  color: white;
 }
 
-.date {
+.likeDate {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  font-weight: b;
+  font-size: 1.5em;
+  color: white;
 }
 
 .temp {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #f5be2f;
 }
 
-.weatherData {
+.quatschData {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .logoContainer {
   background-color: aqua;
-  flex-basis: 50vh;
+  /* flex-basis: 50vh; */
   flex-basis: 50vw;
 }

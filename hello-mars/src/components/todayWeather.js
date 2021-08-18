@@ -8,17 +8,26 @@ const TodayWeather = (props) => {
       <div className="todayWeatherContainer">
         <h3 className="weatherLocation">Gale Crater, Mars</h3>
         <ul className="todayWeatherListItem">
-          <li className="season">Season: {props.todayWeather.season}</li>
-          <li className="date">Sol: {props.todayWeather.sol}</li>
-          <li className="date">Date: {props.todayWeather.date}</li>
+          <li className="season"> {props.todayWeather.season}</li>
+          <br />
+          <li className="likeDate">Sol {props.todayWeather.sol}</li>
+          <li className="likeDate">{props.todayWeather.date}</li>
           <hr />
-          <li className="temp">Min Temp: {props.todayWeather.minTemp} °C</li>
-          <li className="temp">Max Temp: {props.todayWeather.maxTemp} °C</li>
-          <li className="weatherData">Opacity: {props.todayWeather.opacity}</li>
-          <img src={sunny} alt="funny sunny" height="75em" width="auto" />
-          <li className="weatherData">
-            Air Pressure: {props.todayWeather.airPressure} mP
-          </li>
+          <li className="temp">High: {props.todayWeather.minTemp} °C</li>
+          <br />
+          <li className="temp">Low: {props.todayWeather.maxTemp} °C</li>
+          <br />
+          <div className="quatschData">
+            <li className="likeDate">
+              Opacity <br /> <strong>{props.todayWeather.opacity}</strong>
+            </li>
+
+            <img src={sunny} alt="funny sunny" height="75em" width="auto" />
+            <li className="likeDate">
+              Air Pressure <br />{" "}
+              <strong>{props.todayWeather.airPressure} mP</strong>
+            </li>
+          </div>
         </ul>
       </div>
       <div>
