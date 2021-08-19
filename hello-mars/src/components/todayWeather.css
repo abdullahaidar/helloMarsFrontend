@@ -5,19 +5,13 @@
 }
 
 .todayWeatherContainer {
-  background-color: rgba(0, 0, 0, 0.3);
-  /* margin-left: 2vw; */
   margin-top: 2vh;
-  /* width: 30vw;
-  height: 50vh; */
-  /* color: white; */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   border: 4px;
   border-color: rgba(0, 0, 0, 0.3);
   border-style: solid;
-  box-shadow: 0px 19px 37px 8px #580606,
-    0px 0px 41px 6px rgba(245, 190, 47, 0.7);
-  filter: drop-shadow(0px 4px 4px #ededed);
+  filter: drop-shadow(0px 5px 5px #ededed);
   flex-basis: 50vh;
   flex-basis: 30vw;
 }

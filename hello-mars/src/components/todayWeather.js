@@ -13,9 +13,9 @@ const TodayWeather = (props) => {
           <li className="likeDate">Sol {props.todayWeather.sol}</li>
           <li className="likeDate">{props.todayWeather.date}</li>
           <hr />
-          <li className="temp">High: {props.todayWeather.minTemp} °C</li>
+          <li className="temp">Low: {props.todayWeather.minTemp} °C</li>
           <br />
-          <li className="temp">Low: {props.todayWeather.maxTemp} °C</li>
+          <li className="temp">High: {props.todayWeather.maxTemp} °C</li>
           <br />
           <div className="quatschData">
             <li className="likeDate">

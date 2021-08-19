@@ -24,8 +24,8 @@ const FiveDaysWeather = (props) => {
                   width="auto"
                 />
 
-                <li className="fiveDaysTemp">High: {element.minTemp}° C</li>
-                <li className="fiveDaysTemp">Low: {element.maxTemp}° C</li>
+                <li className="fiveDaysTemp">Low: {element.minTemp}° C</li>
+                <li className="fiveDaysTemp">High: {element.maxTemp}° C</li>
               </ul>
             ))
           ) : (
