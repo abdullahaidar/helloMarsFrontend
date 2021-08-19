@@ -1,14 +1,5 @@
-.appContainer{
-/* position: absolute; */
-width: 1440px;
-height: 1012px;
-left: 0px;
-top: 0px;
-
-background: linear-gradient(238.02deg, rgba(255, 255, 255, 0.03) 7.87%, rgba(255, 255, 255, 0.03) 91.34%);
-mix-blend-mode: color-dodge;
-box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.25), 0px 0px 0px rgba(88, 6, 6, 0.4);
-border-radius: 5px;
-
+body {
+  background-image: url(./images/Artist_s_impression_of_Mars.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
-
