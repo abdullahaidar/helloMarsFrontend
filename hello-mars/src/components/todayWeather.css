@@ -1,7 +1,7 @@
 .containsTodayWeatherAndLog {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .todayWeatherContainer {
@@ -34,7 +34,7 @@
   text-align: center;
   text-shadow: 0px 4px 4px #000000;
   font-family: Lato;
-  /* font-weight: bold; */
+
   font-size: 2em;
   color: white;
 }
@@ -64,8 +64,4 @@
 }
 
 .daniversum {
-  /* background-color: aqua; */
-  /* flex-basis: 50vh; */
-  /* flex-basis: 40vh; */
-  /* flex-basis: 30vw; */
 }

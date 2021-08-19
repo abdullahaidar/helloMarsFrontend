@@ -14,17 +14,22 @@ const TodayWeather = (props) => {
           <li className="likeDate">Sol {props.todayWeather.sol}</li>
           <li className="likeDate">{props.todayWeather.date}</li>
           <hr />
-          <li className="temp">Low: {props.todayWeather.minTemp} °C</li>
-          <br />
+
           <li className="temp">High: {props.todayWeather.maxTemp} °C</li>
+          <br />
+          <li className="temp">Low: {props.todayWeather.minTemp} °C</li>
           <br />
           <div className="quatschData">
             <li className="likeDate">
+              {" "}
+              <br />
               Opacity <br /> <strong>{props.todayWeather.opacity}</strong>
             </li>
 
-            <img src={sunny} alt="funny sunny" height="75em" width="auto" />
+            <img src={sunny} alt="funny sunny" height="130em" width="auto" />
             <li className="likeDate">
+              {" "}
+              <br />
               Air Pressure <br />{" "}
               <strong>{props.todayWeather.airPressure} mP</strong>
             </li>
@@ -32,7 +37,13 @@ const TodayWeather = (props) => {
         </ul>
       </div>
       <div className="daniversum">
-        <img className="logImage" src={logo} alt="Hello Mars Logo" />
+        <img
+          className="logImage"
+          src={logo}
+          alt="Hello Mars Logo"
+          height="500vh"
+          width="auto"
+        />
       </div>
     </div>
   );
