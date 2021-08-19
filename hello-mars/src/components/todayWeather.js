@@ -1,6 +1,7 @@
 import React from "react";
 import "./todayWeather.css";
 import sunny from "../images/sunny.png";
+import logo from "../images/mars_logo.png";
 
 const TodayWeather = (props) => {
   return (
@@ -30,9 +31,8 @@ const TodayWeather = (props) => {
           </div>
         </ul>
       </div>
-      <div>
-        <h2 className="logoContainer">HELLO MARS</h2>
-        <img className="logImage" src="" alt="planet Mars" />
+      <div className="daniversum">
+        <img className="logImage" src={logo} alt="Hello Mars Logo" />
       </div>
     </div>
   );

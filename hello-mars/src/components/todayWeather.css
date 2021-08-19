@@ -63,8 +63,9 @@
   flex-wrap: wrap;
 }
 
-.logoContainer {
-  background-color: aqua;
+.daniversum {
+  /* background-color: aqua; */
   /* flex-basis: 50vh; */
-  flex-basis: 50vw;
+  /* flex-basis: 40vh; */
+  /* flex-basis: 30vw; */
 }
