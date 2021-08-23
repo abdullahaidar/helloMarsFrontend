@@ -4,10 +4,23 @@ import sunny from "../images/sunny.png";
 import logo from "../images/mars_logo.png";
 
 const TodayWeather = (props) => {
+
+  const isDayorNight = () => {
+    const currentDate = new Date();
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 23)) {
+      return "day";
+    }
+    else {
+      return "night";
+    }
+  }
+
   return (
     <div className="containsTodayWeatherAndLog">
-      <div className="todayWeatherContainer">
-        <h3 className="weatherLocation">Gale Crater, Mars</h3>
+      <div className=
+        {isDayorNight() === "day" ? "todayWeatherContainer todayWeatherContainerLightMode" : "todayWeatherContainer todayWeatherContainerDarkMode"}
+      >
+        <h3 className={isDayorNight() === 'day' ? "weatherLocation weatherLocationLightMode" : "weatherLocation weatherLocationDarkMode"}>Gale Crater, Mars</h3>
         <ul className="todayWeatherListItem">
           <li className="season"> {props.todayWeather.season}</li>
           <br />
@@ -15,23 +28,24 @@ const TodayWeather = (props) => {
           <li className="likeDate">{props.todayWeather.date}</li>
           <hr />
 
-          <li className="temp">High: {props.todayWeather.maxTemp} °C</li>
+          <li className={isDayorNight() === 'day' ? "temp tempLightMode" : "temp tempDarkMode"}>High: {props.todayWeather.maxTemp} °C</li>
           <br />
-          <li className="temp">Low: {props.todayWeather.minTemp} °C</li>
+          <li className={isDayorNight() === 'day' ? "temp tempLightMode" : "temp tempDarkMode"}>Low: {props.todayWeather.minTemp} °C</li>
           <br />
-          <div className="quatschData">
-            <li className="likeDate">
+          <div className="opacityPressureDiv">
+            <li className="opacityPressure">
               {" "}
               <br />
-              Opacity <br /> <strong>{props.todayWeather.opacity}</strong>
+              Opacity <br />{props.todayWeather.opacity}
             </li>
 
             <img src={sunny} alt="funny sunny" height="130em" width="auto" />
-            <li className="likeDate">
+
+            <li className="opacityPressure ">
               {" "}
               <br />
               Air Pressure <br />{" "}
-              <strong>{props.todayWeather.airPressure} mP</strong>
+              {props.todayWeather.airPressure} mP
             </li>
           </div>
         </ul>
@@ -50,3 +64,5 @@ const TodayWeather = (props) => {
 };
 
 export default TodayWeather;
+
+

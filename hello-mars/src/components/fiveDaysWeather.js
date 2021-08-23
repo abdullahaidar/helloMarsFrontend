@@ -3,12 +3,23 @@ import "./fiveDaysWeather.css";
 import sunny from "../images/sunny.png";
 
 const FiveDaysWeather = (props) => {
-  console.log(props);
+  // console.log(props);
+
+  const isDayorNight = () => {
+    const currentDate = new Date();
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 23)) {
+      return "day";
+    }
+    else {
+      return "night";
+    }
+  }
+
   return (
     <div>
       <div>
-        <h3 className="fiveDaysHeadline">The Past 5 Days</h3>
-        <div className="fiveDaysContainer">
+        <h3 className={isDayorNight() === "day" ? "fiveDaysHeadline  fiveDaysHeadlineLightMode " : "fiveDaysHeadline fiveDaysHeadlineDarkMode"}>The Past 5 Days</h3>
+        <div className=  "fiveDaysContainer">
           {props.fiveDaysWeather ? (
             props.fiveDaysWeather.map((element, index) => (
               <ul className="listContainer">
@@ -23,8 +34,8 @@ const FiveDaysWeather = (props) => {
                   height="75em"
                   width="auto"
                 />
-                <li className="fiveDaysTemp">High: {element.maxTemp}° C</li>
-                <li className="fiveDaysTemp">Low: {element.minTemp}° C</li>
+                <li className={isDayorNight() === "day" ? "fiveDaysTemp fiveDaysTempLightMode " : "fiveDaysTemp fiveDaysTempDarkMode"}>High: {element.maxTemp}° C</li>
+                <li className={isDayorNight() === "day" ? "fiveDaysTemp fiveDaysTempLightMode " : "fiveDaysTemp fiveDaysTempDarkMode"}>Low: {element.minTemp}° C</li>
               </ul>
             ))
           ) : (

@@ -9,6 +9,17 @@ import FiveDaysWeather from "./components/fiveDaysWeather";
 const axios = require("axios").default;
 
 const App = () => {
+
+  const isDayorNight = () => {
+    const currentDate = new Date();
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 20)) {
+      return "day";
+    }
+    else {
+      return "night";
+    }
+  }
+
   const [todayWeather, setTodayWeather] = useState({});
   const [fiveDaysWeather, setFiveDaysWeather] = useState([]);
 
@@ -24,7 +35,7 @@ const App = () => {
   //console.log(fiveDaysWeather)
 
   return (
-    <div className="appContainer">
+    <div >
       <TodayWeather todayWeather={todayWeather} />
       <FiveDaysWeather fiveDaysWeather={fiveDaysWeather} />
     </div>
