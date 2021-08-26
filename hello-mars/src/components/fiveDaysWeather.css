@@ -17,7 +17,6 @@
   color: white;
 }
 .fiveDaysHeadlineDarkMode{
-  /* add the right color */
   color:#F14B01
 }
 .fiveDaysContainer {
@@ -31,15 +30,16 @@
   text-align: center;
   padding-right: 2.6vw;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
-  /* border-radius: 5px; */
-  background-color: rgba(0, 0, 0, 0.3);
-
-  /* backdrop-filter: blur(5px); */
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5%;
   flex-basis: 20vh;
-
   padding-top: 2vh;
   padding-bottom: 2vh;
+}
+
+.listContainerDarkMode{
+  /* backdrop-filter: blur(3px); */
+
 }
 
 .fiveDaysDate {
@@ -60,6 +60,5 @@
   color: #f5be2f;
 }
 .fiveDaysTempDarkMode{
-  /* add the right color */
   color:#F14B01;
 }

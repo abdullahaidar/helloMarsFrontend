@@ -7,7 +7,7 @@ const TodayWeather = (props) => {
 
   const isDayorNight = () => {
     const currentDate = new Date();
-    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 23)) {
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 19)) {
       return "day";
     }
     else {
@@ -50,14 +50,13 @@ const TodayWeather = (props) => {
           </div>
         </ul>
       </div>
-      <div className="daniversum">
-        <img
-          className="logImage"
+      <div className={isDayorNight()==='day' ? "logoLight" : "logoDark"} >
+        {/* <img className="logo"
           src={logo}
           alt="Hello Mars Logo"
           height="500vh"
           width="auto"
-        />
+        /> */}
       </div>
     </div>
   );

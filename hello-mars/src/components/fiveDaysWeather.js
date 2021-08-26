@@ -7,7 +7,7 @@ const FiveDaysWeather = (props) => {
 
   const isDayorNight = () => {
     const currentDate = new Date();
-    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 23)) {
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 19)) {
       return "day";
     }
     else {
@@ -22,7 +22,7 @@ const FiveDaysWeather = (props) => {
         <div className=  "fiveDaysContainer">
           {props.fiveDaysWeather ? (
             props.fiveDaysWeather.map((element, index) => (
-              <ul className="listContainer">
+              <ul className={isDayorNight() === "day" ? "listContainer" : "listContainer listContainerDarkMode"}>
                 {/* <li key={index}></li> */}
                 <li className="fiveDaysDate">Sol {element.sol}</li>
                 <li className="fiveDaysDate"> {element.date}</li>

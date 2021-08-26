@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
+  /* margin-top: 1vh; */
 }
 
 .todayWeatherContainer {
@@ -15,11 +16,10 @@
 }
 .todayWeatherContainerLightMode{
   background-color: rgba(0, 0, 0, 0.3);
-  
-  /* backdrop-filter: blur(5px); */
-}
+  }
 .todayWeatherContainerDarkMode{
-/* add dark mode color */
+background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .todayWeatherListItem {
@@ -86,3 +86,19 @@ color: #F14B01;
   font-size: 1.5em;
   color: white;
 }
+
+.logoLight{
+  background-image: url(../images/mars_logo.png);
+  height:auto;
+  width:25vw;
+  background-size: cover;
+
+}
+
+.logoDark{
+  background-image: url(../images/mars-logo-dark-mode.png);
+  height:auto;
+  width: 25vw;
+  background-repeat: no-repeat;
+}
+

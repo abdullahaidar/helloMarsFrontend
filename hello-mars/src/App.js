@@ -12,7 +12,7 @@ const App = () => {
 
   const isDayorNight = () => {
     const currentDate = new Date();
-    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 20)) {
+    if ((currentDate.getHours() > 6) && (currentDate.getHours() < 19)) {
       return "day";
     }
     else {
@@ -35,10 +35,10 @@ const App = () => {
   //console.log(fiveDaysWeather)
 
   return (
-    <div >
+    <main className={isDayorNight() === "day" ? "appContainerLight" : "appContainerDark"}>
       <TodayWeather todayWeather={todayWeather} />
       <FiveDaysWeather fiveDaysWeather={fiveDaysWeather} />
-    </div>
+    </main>
   );
 };
 
