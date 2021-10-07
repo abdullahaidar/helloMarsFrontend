@@ -1,0 +1,104 @@
+.containsTodayWeatherAndLog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  /* margin-top: 1vh; */
+}
+
+.todayWeatherContainer {
+  margin-top: 2vh;
+  padding-right: 2.6vw;
+  flex-basis: 50vh;
+  flex-basis: 30vw;
+  border-radius: 5%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+
+}
+.todayWeatherContainerLightMode{
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+.todayWeatherContainerDarkMode{
+background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.todayWeatherListItem {
+  list-style: none;
+}
+
+.weatherLocation {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Gugi;
+  font-size: 2.3em;
+  margin-top: 2vh;
+}
+.weatherLocationLightMode{
+  color: white;
+}
+.weatherLocationDarkMode{
+  /* is this color right, please check */
+color: #F14B01;
+}
+
+.season {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  font-size: 2em;
+  color: white;
+}
+
+.likeDate {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  /* font-weight: bold; */
+  font-size: 1.5em;
+  color: white;
+}
+
+.temp {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.tempLightMode{
+  color: #f5be2f;
+
+}
+.tempDarkMode{
+  color: #F14B01;
+}
+.opacityPressureDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.opacityPressure {
+  text-align: center;
+  text-shadow: 0px 4px 4px #000000;
+  font-family: Lato;
+  /* font-weight: b; */
+  font-size: 1.5em;
+  color: white;
+}
+/* 
+.logoLight{
+  background-image: url(../images/mars_logo.png);
+  height:auto;
+  width:25vw;
+  background-size: cover;
+
+}
+
+.logoDark{
+  background-image: url(../images/mars-logo-dark-mode.png);
+  height:auto;
+  width: 25vw;
+  background-repeat: no-repeat;
+}
+ */
