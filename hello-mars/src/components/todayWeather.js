@@ -51,12 +51,12 @@ const TodayWeather = (props) => {
         </ul>
       </div>
       <div className={isDayorNight()==='day' ? "logoLight" : "logoDark"} >
-        {/* <img className="logo"
+        <img className="logo"
           src={logo}
           alt="Hello Mars Logo"
           height="500vh"
           width="auto"
-        /> */}
+        />
       </div>
     </div>
   );
